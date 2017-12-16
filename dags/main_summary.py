@@ -194,7 +194,7 @@ client_count_daily_view = EMRSparkOperator(
     owner="relud@mozilla.com",
     email=["telemetry-alerts@mozilla.com", "relud@mozilla.com"],
     instance_count=2,
-    env = {"date": "{{ ds_nodash }}", "bucket": "{{ task.__class__.private_output_bucket }}"},
+    env={"date": "{{ ds_nodash }}", "bucket": "{{ task.__class__.private_output_bucket }}"},
     uri="https://raw.githubusercontent.com/mozilla/telemetry-airflow/master/jobs/client_count_daily_view.sh",
     dag=dag)
 

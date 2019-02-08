@@ -20,7 +20,7 @@ update_tab_spinner_severity = EMRSparkOperator(
     job_name="Tab Spinner Severity Job",
     execution_timeout=timedelta(hours=12),
     instance_count=12,
-    uri="https://raw.githubusercontent.com/mozilla/telemetry-airflow/master/jobs/run-severity-generator.sh",
+    uri="https://raw.githubusercontent.com/wlach/telemetry-airflow/testing-branch/jobs/run-severity-generator.sh",
     dag=dag
 )
 
